@@ -106,7 +106,7 @@
   *        (when HSE is used as system clock source, directly or through the PLL).
   */
 #if !defined  (HSE_VALUE)
-#if defined(TARGET_DISCO_F746NG) || defined(TARGET_DISCO_F769NI)
+#if defined(TARGET_DISCO_F746NG) || defined(TARGET_DISCO_F769NI || defined(TARGET_DISCO_F765VI)
   #define HSE_VALUE    25000000U /*!< Value of the External oscillator in Hz */
 #else
   #define HSE_VALUE    8000000U /*!< Default value of the External oscillator in Hz */
@@ -195,7 +195,7 @@
 /* Section 2: PHY configuration section */
 
 /* DP83848 PHY Address*/
-#define DP83848_PHY_ADDRESS             0x01U
+#define DP83848_PHY_ADDRESS             0x00U
 /* PHY Reset delay these values are based on a 1 ms Systick interrupt*/
 #define PHY_RESET_DELAY                 0x000000FFU
 /* PHY Configuration delay */

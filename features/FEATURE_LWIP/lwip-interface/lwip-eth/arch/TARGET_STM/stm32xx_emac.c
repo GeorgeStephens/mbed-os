@@ -119,7 +119,7 @@ static void _eth_arch_low_level_init(struct netif *netif)
     EthHandle.Init.MACAddr = &MACAddr[0];
     EthHandle.Init.RxMode = ETH_RXINTERRUPT_MODE;
     EthHandle.Init.ChecksumMode = ETH_CHECKSUM_BY_HARDWARE;
-    EthHandle.Init.MediaInterface = ETH_MEDIA_INTERFACE_RMII;
+    EthHandle.Init.MediaInterface = ETH_MEDIA_INTERFACE_MII;
     HAL_ETH_Init(&EthHandle);
 
     /* Initialize Tx Descriptors list: Chain Mode */
