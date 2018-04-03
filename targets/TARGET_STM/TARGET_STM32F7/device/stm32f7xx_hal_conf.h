@@ -106,7 +106,7 @@
   *        (when HSE is used as system clock source, directly or through the PLL).
   */
 #if !defined  (HSE_VALUE)
-#if defined(TARGET_DISCO_F746NG) || defined(TARGET_DISCO_F769NI || defined(TARGET_DISCO_F765VI)
+#if defined(TARGET_DISCO_F746NG) || defined(TARGET_DISCO_F769NI) || defined(TARGET_DISCO_F765VI)
   #define HSE_VALUE    25000000U /*!< Value of the External oscillator in Hz */
 #else
   #define HSE_VALUE    8000000U /*!< Default value of the External oscillator in Hz */
