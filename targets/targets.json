@@ -1861,7 +1861,6 @@
         "inherits": ["FAMILY_STM32"],
         "core": "Cortex-M7FD",
         "extra_labels_add": ["STM32F7", "STM32F765", "STM32F765xI", "STM32F765VI"],
-        "supported_form_factors": ["ARDUINO"],
         "config": {
             "clock_source": {
                 "help": "Mask value : USE_PLL_HSE_EXTC | USE_PLL_HSE_XTAL | USE_PLL_HSI",
@@ -1874,8 +1873,7 @@
             }
         },
         "detect_code": ["0817"],
-        "macros_add": ["USB_STM_HAL"],
-        "device_has_add": ["ANALOGOUT", "CAN", "LOWPOWERTIMER", "SERIAL_ASYNCH", "TRNG", "FLASH"],
+        "device_has_add": ["ANALOGOUT", "LOWPOWERTIMER", "SERIAL_ASYNCH", "TRNG", "FLASH"],
         "features": ["LWIP"],
         "release_versions": ["2", "5"],
         "device_name": "STM32F765VI"
